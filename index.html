@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .thumbnail {
+            width: 400px;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .thumbnail:hover {
+            transform: scale(1.02);
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="agency-tactics-white-1.jpg" class="thumbnail">
+            <img src="agency-tactics-white-1-thumb.jpg" alt="Agency Tactics White 1">
+        </a>
+        <a href="agency-tactics-white-2.jpg" class="thumbnail">
+            <img src="agency-tactics-white-2-thumb.jpg" alt="Agency Tactics White 2">
+        </a>
+        <a href="consultants-digiti-1.jpg" class="thumbnail">
+            <img src="consultants-digiti-1-thumb.jpg" alt="Consultants Digiti 1">
+        </a>
+        <a href="consultants-rise-1.jpg" class="thumbnail">
+            <img src="consultants-rise-1-thumb.jpg" alt="Consultants Rise 1">
+        </a>
+        <a href="insured-waystone-1.jpg" class="thumbnail">
+            <img src="insured-waystone-1-thumb.jpg" alt="Insured Waystone 1">
+        </a>
+        <a href="insured-waystone-2.jpg" class="thumbnail">
+            <img src="insured-waystone-2-thumb.jpg" alt="Insured Waystone 2">
+        </a>
+        <a href="insured-waystone-3.jpg" class="thumbnail">
+            <img src="insured-waystone-3-thumb.jpg" alt="Insured Waystone 3">
+        </a>
+        <a href="policy-128-1.jpg" class="thumbnail">
+            <img src="policy-128-1-thumb.jpg" alt="Policy 128 1">
+        </a>
+        <a href="policy-128-2.jpg" class="thumbnail">
+            <img src="policy-128-2-thumb.jpg" alt="Policy 128 2">
+        </a>
+        <a href="policy-128-3.jpg" class="thumbnail">
+            <img src="policy-128-3-thumb.jpg" alt="Policy 128 3">
+        </a>
+    </div>
+</body>
+</html>
